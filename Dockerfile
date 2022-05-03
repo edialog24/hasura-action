@@ -11,6 +11,7 @@ LABEL com.github.actions.color="gray-dark"
 
 RUN apk add --no-cache curl bash libstdc++ jq
 RUN curl -L https://github.com/hasura/graphql-engine/raw/stable/cli/get.sh | bash
+RUN hasura update-cli
 
 
 COPY LICENSE README.md /
